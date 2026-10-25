@@ -17,4 +17,4 @@ Projede şu an için temel HTML sayfaları ve temel CSS tasarımı oluşturulmu�
 Projeyi bilgisayarınızda yerel olarak çalıştırmak için:
 1. Bu depoyu indirin veya klonlayın:
    ```bash
-   git clone (https://github.com/frknbyrk/kafe-web-projesi.git)
+   git clone https://github.com/frknbyrk/kafe-web-projesi.git
