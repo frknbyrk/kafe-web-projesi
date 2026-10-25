@@ -18,3 +18,6 @@ Projeyi bilgisayarınızda yerel olarak çalıştırmak için:
 1. Bu depoyu indirin veya klonlayın:
    ```bash
    git clone https://github.com/frknbyrk/kafe-web-projesi.git
+
+## Haftalık İlerleme Videoları
+- **1. Hafta Videosu:** https://drive.google.com/file/d/1eZCX7eQwcDh_9EqD0nEHaho2E1OkyY0v/view?usp=drive_link
