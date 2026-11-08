@@ -1,0 +1,129 @@
+/* Genel Sayfa Ayarları (Yazı tipi, arka plan ve kenar boşluğu) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f3ee; /* Açık krem / kahve tonu */
+    color: #333333;
+    margin: 20px;
+}
+
+/* Üst Başlık ve Navigasyon Çubuğu */
+header {
+    background-color: #5c3d2e; /* Koyu kahverengi */
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+/* Menü Linkleri */
+nav a {
+    color: #f1ede8;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: #ffcc80; /* Fare üzerine gelince açık turuncu/bal rengi */
+    text-decoration: underline;
+}
+
+/* Sayfa İçi Başlıklar */
+h2, h3 {
+    color: #5c3d2e;
+}
+
+/* Menü Sayfasındaki Tablo Stilleri */
+.menu-tablo {
+    width: 65%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.menu-tablo th, .menu-tablo td {
+    border: 1px solid #cbb5a1;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-tablo th {
+    background-color: #bfa189;
+    color: white;
+}
+
+/* İletişim Formu */
+.iletisim-form {
+    background-color: white;
+    padding: 20px;
+    width: 320px;
+    border: 1px solid #dcd4cc;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.iletisim-form input, .iletisim-form textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.iletisim-form button {
+    background-color: #5c3d2e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.iletisim-form button:hover {
+    background-color: #3f271c;
+}
+
+/* Galeri Sayfası Fotoğraf Kutuları */
+.galeri-alani {
+    margin-top: 20px;
+}
+
+.galeri-karti {
+    background-color: white;
+    border: 1px solid #dcd4cc;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    width: 260px;
+    text-align: center;
+}
+
+.galeri-karti img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.galeri-karti p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555555;
+}
+
+/* Alt Bilgi (Footer) */
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #cbb5a1;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #777777;
+    text-align: center;
+}

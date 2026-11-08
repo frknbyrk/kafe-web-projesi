@@ -20,4 +20,4 @@ Projeyi bilgisayarınızda yerel olarak çalıştırmak için:
    git clone https://github.com/frknbyrk/kafe-web-projesi.git
 
 ## Haftalık İlerleme Videoları
-- **1. Hafta Videosu:** https://drive.google.com/file/d/1eZCX7eQwcDh_9EqD0nEHaho2E1OkyY0v/view?usp=drive_link
+- https://drive.google.com/drive/folders/1iQG4Q8iKGct-qnbskra5fTscsic8_b1Z?usp=drive_link
