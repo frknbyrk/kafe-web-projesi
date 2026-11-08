@@ -1,22 +1,33 @@
-/* Genel Sayfa Ayarları (Yazı tipi, arka plan ve kenar boşluğu) */
+/* Genel Sayfa Ayarları */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f3ee; /* Açık krem / kahve tonu */
+    background-color: #f7f3ee;
     color: #333333;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Üst Başlık ve Navigasyon Çubuğu */
+/* Sayfayı Ortada Tutan Kapsayıcı (Temel Düzen) */
+.kapsayici {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Üst Kısım: Flex ile Başlık Sola, Menü Sağa Konumlandırma */
 header {
-    background-color: #5c3d2e; /* Koyu kahverengi */
+    background-color: #5c3d2e;
     color: white;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 6px;
-    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    margin: 0 0 10px 0;
+    margin: 0;
+    font-size: 24px;
     color: #ffffff;
 }
 
@@ -25,50 +36,60 @@ nav a {
     color: #f1ede8;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 8px;
+    margin-left: 15px;
 }
 
 nav a:hover {
-    color: #ffcc80; /* Fare üzerine gelince açık turuncu/bal rengi */
+    color: #ffcc80;
     text-decoration: underline;
 }
 
-/* Sayfa İçi Başlıklar */
+/* Başlıklar */
 h2, h3 {
     color: #5c3d2e;
 }
 
-/* Menü Sayfasındaki Tablo Stilleri */
-.menu-tablo {
-    width: 65%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background-color: white;
+/* 3. Hafta: Ana Sayfa İki Kolonlu Konumlandırma */
+.ana-icerik-alani {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
 }
 
-.menu-tablo th, .menu-tablo td {
-    border: 1px solid #cbb5a1;
-    padding: 10px;
-    text-align: left;
-}
-
-.menu-tablo th {
-    background-color: #bfa189;
-    color: white;
-}
-
-/* İletişim Formu */
-.iletisim-form {
+.tanitim-kutusu, .ozellikler-kutusu {
+    flex: 1;
     background-color: white;
     padding: 20px;
-    width: 320px;
+    border-radius: 6px;
+    border: 1px solid #dcd4cc;
+}
+
+/* 3. Hafta: İletişim Sayfası Düzeni (Form ve Adres Yan Yana) */
+.iletisim-duzeni {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.form-alani {
+    flex: 1.2;
+    background-color: white;
+    padding: 20px;
     border: 1px solid #dcd4cc;
     border-radius: 6px;
-    margin-top: 15px;
+}
+
+.adres-alani {
+    flex: 0.8;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dcd4cc;
+    border-radius: 6px;
+    height: fit-content;
 }
 
 .iletisim-form input, .iletisim-form textarea {
-    width: 90%;
+    width: 95%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -88,8 +109,12 @@ h2, h3 {
     background-color: #3f271c;
 }
 
-/* Galeri Sayfası Fotoğraf Kutuları */
+/* 3. Hafta: Galeri Fotoğraflarının Flex ile Konumlandırılması */
 .galeri-alani {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -97,11 +122,8 @@ h2, h3 {
     background-color: white;
     border: 1px solid #dcd4cc;
     border-radius: 6px;
-    display: inline-block;
-    margin: 10px;
     padding: 10px;
-    vertical-align: top;
-    width: 260px;
+    width: 250px;
     text-align: center;
 }
 
@@ -118,11 +140,30 @@ h2, h3 {
     color: #555555;
 }
 
+/* Menü Sayfası Tablosu */
+.menu-tablo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.menu-tablo th, .menu-tablo td {
+    border: 1px solid #cbb5a1;
+    padding: 12px;
+    text-align: left;
+}
+
+.menu-tablo th {
+    background-color: #bfa189;
+    color: white;
+}
+
 /* Alt Bilgi (Footer) */
 footer {
     margin-top: 40px;
     border-top: 1px solid #cbb5a1;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 13px;
     color: #777777;
     text-align: center;

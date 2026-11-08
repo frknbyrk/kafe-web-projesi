@@ -7,40 +7,48 @@
 </head>
 <body>
 
-    <header>
-        <h1>Hisar Kafe</h1>
-        <nav>
-            <a href="index.html">Ana Sayfa</a> |
-            <a href="menu.html">Menü</a> |
-            <a href="iletisim.html">İletişim</a>
-            <a href="galeri.html">Galeri</a>
-        </nav>
-    </header>
+    <div class="kapsayici">
+        <header>
+            <h1>Hisar Kafe</h1>
+            <nav>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="menu.html">Menü</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+        </header>
 
-    <main>
-        <h2>Bize Mesaj Gönderin</h2>
-        
-        <form class="iletisim-form">
-            <p>
-                <label>Adınız:</label><br>
-                <input type="text" placeholder="Adınızı girin">
-            </p>
-            <p>
-                <label>E-posta Adresiniz:</label><br>
-                <input type="email" placeholder="ornek@mail.com">
-            </p>
-            <p>
-                <label>Mesajınız:</label><br>
-                <textarea rows="4" cols="30" placeholder="Görüş veya öneriniz..."></textarea>
-            </p>
-            <button type="submit">Gönder</button>
-        </form>
+        <main>
+            <h2>Bizimle İletişime Geçin</h2>
 
-        <section class="adres">
-            <h3>Adresimiz</h3>
-            <p>Üniversite Caddesi No: 12, Ankara</p>
-        </section>
-    </main>
+            <div class="iletisim-duzeni">
+                <div class="form-alani">
+                    <form class="iletisim-form">
+                        <p>
+                            <label>Adınız:</label><br>
+                            <input type="text" placeholder="Adınızı girin">
+                        </p>
+                        <p>
+                            <label>E-posta Adresiniz:</label><br>
+                            <input type="email" placeholder="ornek@mail.com">
+                        </p>
+                        <p>
+                            <label>Mesajınız:</label><br>
+                            <textarea rows="4" placeholder="Görüş veya öneriniz..."></textarea>
+                        </p>
+                        <button type="submit">Gönder</button>
+                    </form>
+                </div>
+
+                <div class="adres-alani">
+                    <h3>Adresimiz</h3>
+                    <p>Üniversite Caddesi No: 12, Ankara</p>
+                    <p><strong>Çalışma Saatleri:</strong></p>
+                    <p>Hafta içi & Hafta sonu: 08:30 - 22:00</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
